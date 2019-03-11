@@ -2,7 +2,7 @@
 $inputNums = array(1,2,3,4,5);
 $inputChars = array('a','b','c','d','e');
 
-echo "Result " . combineArrays($inputNums,$inputChars);
+echo "Result " . var_dump(combineArrays($inputNums,$inputChars));
 
 function combineArrays($inputNums=array(),$inputChars=array())
 {
@@ -12,6 +12,6 @@ function combineArrays($inputNums=array(),$inputChars=array())
         $resultArray[] = $inputChars[$i];
         $resultArray[] = $inputNums[$i];
     }
-    var_dump($resultArray);
+    //var_dump($resultArray);
     return $resultArray;
 }
